@@ -9,7 +9,7 @@ This approach enables effective logo clustering without relying on traditional M
 
 ##  LogoSimilarity: Technologies & Dependencies
 
-- The LogoSimilarity tool leverages a diverse set of libraries and technologies to accomplish its tasks. Below is a comprehensive overview of all dependencies used in the codebase.
+-- The LogoSimilarity tool leverages a diverse set of libraries and technologies to accomplish its tasks. Below is a comprehensive overview of all dependencies used in the codebase.
 
 ## Core Technologies Table
 
