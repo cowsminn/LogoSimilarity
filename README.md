@@ -1,15 +1,15 @@
 # LogoSimilarity
 
-- A tool for downloading, converting, and comparing company logos to identify visual similarities without using traditional ML clustering approaches.
+A tool for downloading, converting, and comparing company logos to identify visual similarities without using traditional ML clustering approaches.
 
 ## Overview
 
-- This project provides a complete pipeline for identifying and grouping similar logos across different websites without relying on machine learning algorithms. The system combines vector-based representation (SVG), multi-dimensional feature comparison, and graph-based clustering to achieve high accuracy at scale.
+This project provides a complete pipeline for identifying and grouping similar logos across different websites without relying on machine learning algorithms. The system combines vector-based representation (SVG), multi-dimensional feature comparison, and graph-based clustering to achieve high accuracy at scale.
 This approach enables effective logo clustering without relying on traditional ML algorithms like DBSCAN or k-means.
 
 ##  LogoSimilarity: Technologies & Dependencies
 
--- The LogoSimilarity tool leverages a diverse set of libraries and technologies to accomplish its tasks. Below is a comprehensive overview of all dependencies used in the codebase.
+ The LogoSimilarity tool leverages a diverse set of libraries and technologies to accomplish its tasks. Below is a comprehensive overview of all dependencies used in the codebase.
 
 ## Core Technologies Table
 
