@@ -92,6 +92,10 @@ The system acquires logos using multiple complementary methods:
   - Concurrent downloads with configurable concurrency limits
   - Automatic retry with progressive fallback strategies
   - Comprehensive error handling and failure logging
+ 
+<p align="center">
+  <img src="img/3.png">
+</p>
 
 ### 2. SVG Conversion
 
@@ -115,6 +119,10 @@ The similarity engine employs a sophisticated multi-dimensional approach:
   - Logos are grouped by dimensions (0-32px, 33-64px, 65-128px, etc.)
   - This reduces the computational complexity from O(n²) to near-linear
   - Additional aspect ratio categories (portrait, landscape, square) improve matching
+  
+<p align="center">
+  <img src="img/1.png">
+</p>
 
 - **Multi-Feature Comparison**:
   1. **Path Data Similarity (45%)**: Converts SVG paths to hashes and applies Jaccard similarity to identify structural matches regardless of source
@@ -185,7 +193,6 @@ The LogoSimilarity system employs a weighted approach combining five key metrics
 
 ## Resources
 
-- [Pandas vs Polars](https://blog.jetbrains.com/pycharm/2024/07/polars-vs-pandas/) 
-
+- [Pandas vs Polars](https://blog.jetbrains.com/pycharm/2024/07/polars-vs-pandas/)
 - [Potrace papers](http://potrace.sourceforge.net/potrace.pdf)
 - [Jaccard Index for Set Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
