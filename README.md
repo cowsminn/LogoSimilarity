@@ -196,3 +196,4 @@ The LogoSimilarity system employs a weighted approach combining five key metrics
 - [Pandas vs Polars](https://blog.jetbrains.com/pycharm/2024/07/polars-vs-pandas/)
 - [Potrace papers](http://potrace.sourceforge.net/potrace.pdf)
 - [Jaccard Index for Set Similarity](https://en.wikipedia.org/wiki/Jaccard_index)
+- [ML](https://mlvu.github.io)
