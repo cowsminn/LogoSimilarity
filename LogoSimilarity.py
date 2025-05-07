@@ -22,6 +22,7 @@ import cv2
 from io import BytesIO
 import pickle
 import functools
+from urllib.parse import urljoin
 
 # Cache folder for storing intermediate results
 CACHE_DIR = '.svg_cache'
@@ -63,7 +64,7 @@ def get_logo_url(domain, fallback=False):
 async def download_logo(session, domain, output_dir):
     filename = os.path.join(output_dir, f"{domain.replace('/', '_')}.png")
     if os.path.exists(filename):
-        return
+        return True 
 
     # First try Google favicon
     for fallback in [False, True]:
@@ -75,7 +76,7 @@ async def download_logo(session, domain, output_dir):
                     if len(content) > 100:
                         async with aiofiles.open(filename, 'wb') as f:
                             await f.write(content)
-                        return
+                        return True 
         except Exception:
             continue
 
@@ -89,12 +90,12 @@ async def download_logo(session, domain, output_dir):
                     if len(content) > 100:
                         async with aiofiles.open(filename, 'wb') as f:
                             await f.write(content)
-                        return
+                        return True  
         except Exception:
             pass
 
     print(f"Failed: {domain}")
-    return None
+    return None 
 
 async def download_all(domains, output_dir, concurrency=50):
     failed_domains = []
